@@ -1,0 +1,22 @@
+package package12;
+
+public class Reverse123 {
+	public static void main(String[] args) {
+		Reverse123 ref1=new Reverse123();
+		int start=100;
+		int end=300;
+		for(int a=start;a<=end;a++) {
+			System.out.println(ref1.revNumber(a) );
+	
+	}
+	}
+		int revNumber(int a) {
+		String value=a+"";
+		StringBuffer ref2=new StringBuffer(value);
+		StringBuffer ref3=ref2.reverse();
+		String value1=ref3.toString();
+		Integer ref4=new Integer(value1);
+		int result= ref4.intValue();
+		return result;
+		}
+		}
